@@ -218,3 +218,12 @@ function infoHonden() {
 
 
 }
+
+chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+  if (chrome.runtime.lastError) {
+    console.error("Error sending message:", chrome.runtime.lastError.message);
+    // Handle the error, e.g., the recipient is not available
+  } else {
+    console.log(response.farewell);
+  }
+});
