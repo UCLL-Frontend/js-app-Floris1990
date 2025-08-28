@@ -171,7 +171,7 @@ function updateAnimals() {
 function infoHonden() {
     const info = document.querySelector('#ziekeHonden');
     const info2 = document.querySelector('#aantalHonden');
-    
+
     if (info != null) {
         info.innerText = 'Aantal honden in asiel:';
     }
@@ -184,18 +184,23 @@ function infoHonden() {
 
     let teller = 0;
 
-    animals.forEach((x) => {
-        if (x.gezondheid != 'goed') {
-            teller++;
+    if (animals != null) {
+        animals.forEach((x) => {
+            if (x.gezondheid != 'goed') {
+                teller++;
+            }
+        })
+
+
+        if (info != null) {
+            info2.innerText += teller;
         }
-    })
+        if (info2 != null) {
+            info.innerText += animals.length;
+        }
 
 
-    if (info != null) {
-        info2.innerText += teller;
     }
-    if (info2 != null) {
-        info.innerText += animals.length;
-    }
+
 
 }
