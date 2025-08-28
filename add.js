@@ -1,6 +1,8 @@
 import { saveData } from "./hulpfuncties.js";
  
-animals = {
+const animals = [];
+
+const beginAnimal = {
     Id:1,
     Ras: 'Bulldog',
     Naam: 'Frank',
@@ -10,9 +12,10 @@ animals = {
     Gezondheid: 'goed'
 }
 
+animals.push(beginAnimal);
 
 
- const animals =+ JSON.parse(localStorage.getItem('dogList'))
+animals =+ JSON.parse(localStorage.getItem('dogList'))
 
 
 
