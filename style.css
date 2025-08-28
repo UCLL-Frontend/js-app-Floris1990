@@ -1,20 +1,19 @@
-
-:root{
+:root {
     --color-header-: #d4e6f4;
     --color-main-prim: #fce4d4;
-    --color-main-sec: #EAC7AB;   
+    --color-main-sec: #EAC7AB;
 }
 
-*{
- margin:0; 
- box-sizing: border-box    
+* {
+    margin: 0;
+    box-sizing: border-box
 }
 
-body{
-background-color: var(--color-main-prim);
-font-size: 1.2rem;
-line-height: 1.7rem;
-font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: var(--color-main-prim);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -22,59 +21,59 @@ font-family: Arial, Helvetica, sans-serif;
 
 /*SMALL SCREEN*/
 
-.grid{
-    display:grid;
+.grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--color-header-);
     margin-bottom: 20px;
     border-bottom: 3px solid black;
-   
+
 }
 
-.grid-logo{
-max-width: 100%;
-grid-column: span 2;
+.grid-logo {
+    max-width: 100%;
+    grid-column: span 2;
 }
 
-.grid-title{
-  grid-row: 2; 
-  grid-column: span 2; 
-  justify-self: center;
-  margin-top: 1rem;
-  
+.grid-title {
+    grid-row: 2;
+    grid-column: span 2;
+    justify-self: center;
+    margin-top: 1rem;
+
 }
 
-.grid-nav{
-grid-row: 3;
-grid-column: span 2;
-justify-self: center;
-margin-right: 2em;
+.grid-nav {
+    grid-row: 3;
+    grid-column: span 2;
+    justify-self: center;
+    margin-right: 2em;
 }
 
-.navigatie{
-    display:flex;
+.navigatie {
+    display: flex;
     list-style-type: None;
     gap: 2em;
 }
 
 /*SCREEN SIZE 930PX*/
 
-@media(min-width: 930px){
+@media(min-width: 930px) {
 
-    .grid-logo{
+    .grid-logo {
         grid-row: span 2;
         grid-column: 1;
         max-width: 100%;
         height: 100%;
     }
 
-    .grid-title{
+    .grid-title {
         grid-column: 2;
         grid-row: 1;
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 
-    .grid-nav{
+    .grid-nav {
         grid-column: 2;
         grid-row: 2;
         font-size: 1.2rem;
@@ -84,47 +83,47 @@ margin-right: 2em;
 
 /* SCREEN SIZE 1500PX*/
 
-@media(min-width: 1500px){
-    .grid-title{
-        font-size: 3.5rem;        
+@media(min-width: 1500px) {
+    .grid-title {
+        font-size: 3.5rem;
         margin-top: 3rem;
-        
+
     }
 
-    .grid-nav{
-        font-size: 1.4rem;  
-        margin-right: 2rem;     
-        
+    .grid-nav {
+        font-size: 1.4rem;
+        margin-right: 2rem;
+
     }
 }
 
 /* SCREEN SIZE 2200PX*/
 
-@media(min-width:2200px){
+@media(min-width:2200px) {
 
-    .grid-title{
+    .grid-title {
         justify-self: start;
         margin-left: 1.5rem;
     }
 
-    .grid-nav{
+    .grid-nav {
         justify-self: start;
-        
-        
+
+
     }
 }
 
 /* Main */
 
-main{
+main {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.2rem;
-    padding-right: 0.2rem;        
+    padding-right: 0.2rem;
 }
 
-h2{
+h2 {
     font-size: 2.2rem;
     text-align: center;
     margin-top: 2.2rem;
@@ -132,114 +131,117 @@ h2{
 }
 
 
-main ul{
-    
-    margin-top: 2em;    
-    list-style-type: circle;    
+main ul {
+
+    margin-top: 2em;
+    list-style-type: circle;
 }
 
 /* Footer */
 
-.footer-container{
+.footer-container {
     position: fixed;
-    left:0;
-    bottom:0;
-    width:100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 1em;
-    background-color: var(--color-main-sec);    
+    background-color: var(--color-main-sec);
     display: grid;
-    grid-template-columns: 1fr 1fr;    
-    height:80px;    /* A1: Spatie tussen main en footer */
-    
-    
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+    /* A1: Spatie tussen main en footer */
+
+
 }
 
-footer :first-child{
+footer :first-child {
     justify-self: center;
-    
+
 }
 
-footer :nth-child(2){
-    grid-column: 2;  
+footer :nth-child(2) {
+    grid-column: 2;
     justify-self: center;
 }
 
-footer :nth-child(3){
+footer :nth-child(3) {
     grid-column: 2;
     justify-self: center;
 }
 
 /* Adoptie */
 
-main.adoptie{
+main.adoptie {
     max-width: 100em;
-    padding-bottom: 80px;   /* A1: Spatie tussen main en footer */   
-    
-    
+    padding-bottom: 80px;
+    /* A1: Spatie tussen main en footer */
+
+
 }
 
-.flexbox{
-    
-    
+.flexbox {
+
+
     display: flex;
-    flex-direction: column;       
+    flex-direction: column;
     padding: 5px;
     border: 1px solid black;
     margin-bottom: 2em;
     margin-left: 1rem;
     margin-right: 1rem;
-       
+
 }
 
-.flexbox > *{
-   flex: 1;  
+.flexbox>* {
+    flex: 1;
 }
 
 
 
 
-.flexbox ul li{
+.flexbox ul li {
     margin-bottom: 1em;
-    list-style-type:disc;
+    list-style-type: disc;
     margin-right: 0.5em;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
-@media(min-width: 1000px){
-    .flexbox{
+@media(min-width: 1000px) {
+    .flexbox {
         flex-direction: column;
         border: 1px solid black;
     }
-    .flexbox ul{    
-    margin-left: 0.5em;    
-     
+
+    .flexbox ul {
+        margin-left: 0.5em;
+
     }
 
-    .container{
+    .container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media(min-width: 1600px){
-    .container{
+@media(min-width: 1600px) {
+    .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
 
-@media(min-width: 1900px){
-    .container{
+@media(min-width: 1900px) {
+    .container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -248,38 +250,35 @@ form{
 
 }
 
-#submitButton{
+#submitButton {
     margin-top: 1rem;
 
 }
 
-.icon{
+.icon {
     width: 25px;
     height: 25px;
-    position:absolute;
+    position: absolute;
     left: 5px;
-    top:5px;
+    top: 5px;
 }
 
-.icon:hover{
+.icon:hover {
     cursor: pointer;
 }
 
-.icon2{
+.icon2 {
     width: 25px;
     height: 25px;
-    position:absolute;
+    position: absolute;
     left: 40px;
-    top:5px;
+    top: 5px;
 }
 
-.icon2:hover{
+.icon2:hover {
     cursor: pointer;
 }
 
-article{
+article {
     position: relative;
 }
-
-
-
