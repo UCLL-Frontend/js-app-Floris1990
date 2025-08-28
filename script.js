@@ -66,7 +66,12 @@ if (container != null) {
 
 }
 
-animals.forEach(showAnimal);
+if(animals != null)
+    {
+        animals.forEach(showAnimal);
+
+    }
+
 
 
 /* FUNCTIONS */
@@ -115,7 +120,11 @@ function removeAnimal(x) {
 function Caretaking() {
     const feedbackposition = document.querySelector('.Feedback_Caretaker');
     const feedbackelement = document.createElement('article');
-    animals.forEach((x) => {
+    
+    if(animals !=null) 
+        {
+       
+            animals.forEach((x) => {
         const chance = Math.floor(Math.random() * 100);
         if (chance < 20 && x.gezondheid == 'kritiek') {
 
@@ -150,11 +159,16 @@ function Caretaking() {
 
 
         }
+          })
+
+        }
+    
 
 
 
 
-    })
+  
+        
     updateAnimals();
     saveData(animals);
     infoHonden();
