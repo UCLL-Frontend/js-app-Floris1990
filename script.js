@@ -2,7 +2,7 @@ import {
     saveData
 } from "./hulpfuncties.js";
 
-let animals = JSON.parse(localStorage.getItem('dogList'));
+let animals = JSON.parse(localStorage.getItem('dogList')) || [];
 const update = new CustomEvent('updateList');
 
 console.log(animals);

@@ -3,7 +3,7 @@ import { saveData } from "./hulpfuncties.js";
 
 
 
-const animals = JSON.parse(localStorage.getItem('dogList'));
+const animals = JSON.parse(localStorage.getItem('dogList')) || [];
 
 
 
