@@ -5,6 +5,7 @@ import {
 let animals = JSON.parse(localStorage.getItem('dogList'));
 const update = new CustomEvent('updateList');
 
+console.log(animals);
 
 
 
@@ -170,7 +171,7 @@ function updateAnimals() {
 function infoHonden() {
     const info = document.querySelector('#ziekeHonden');
     const info2 = document.querySelector('#aantalHonden');
-    console.log(('test'))
+    
     if (info != null) {
         info.innerText = 'Aantal honden in asiel:';
     }
