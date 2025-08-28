@@ -37,6 +37,9 @@ if(userInput != null)
 function  findHighestId(){
     let Id = 0;
 
+    
+    if(animals == null)
+    { animals = []}
     animals.forEach((x) =>{
         if(x.Id > Id)
         {Id = x.Id}
