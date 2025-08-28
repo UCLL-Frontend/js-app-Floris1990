@@ -1,6 +1,6 @@
 import { saveData } from "./hulpfuncties.js";
  
-const animals = [];
+let animals = [];
 
 const beginAnimal = {
     Id:1,
@@ -45,22 +45,17 @@ if(userInput != null)
 
 /* FUNCTIONS */
 
+
 function  findHighestId(){
     let Id = 0;
 
-    if(animals != null)
-        {
-            animals.forEach((x) =>{
+    animals.forEach((x) =>{
         if(x.Id > Id)
         {Id = x.Id}
 
     })
 
     return Id;
-
-        }
-    
-    
 }
 
 function addAnimal () {
