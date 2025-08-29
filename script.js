@@ -15,7 +15,7 @@ console.log(animals);
 
 infoHonden();
 
-
+console.log(animals)
 
 /* Caretaker event */
 
@@ -61,6 +61,7 @@ const container = document.querySelector('div.container');
 
 if (container != null) {
     container.addEventListener('updateList', () => {
+        
         updateAnimals();
     })
 
@@ -93,7 +94,9 @@ function showAnimal(x) {
     icon1.addEventListener('click', () => {
         x.Karakter = prompt("What did you find out about the dog's personality?");
         console.log(x.Karakter);
-        container.dispatchEvent(update)
+        container.dispatchEvent(update);
+        saveData(animals)
+        
     })
 
     icon1.nextElementSibling.addEventListener('click', () => {
