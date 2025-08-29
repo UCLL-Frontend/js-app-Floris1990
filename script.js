@@ -95,13 +95,14 @@ function showAnimal(x) {
         x.Karakter = prompt("What did you find out about the dog's personality?");
         console.log(x.Karakter);
         container.dispatchEvent(update);
-        saveData(animals)
+        saveData(animals);
         
     })
 
     icon1.nextElementSibling.addEventListener('click', () => {
         x.gezondheid = 'goed';
-        container.dispatchEvent(update)
+        container.dispatchEvent(update);
+        saveData(animals);
     })
 
     if (position != null) {
